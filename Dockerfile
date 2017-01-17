@@ -2,9 +2,9 @@ FROM php:7.0-fpm-alpine
 MAINTAINER Zaher Ghaibeh <z@zah.me>
 
 RUN apk update \
-    && apk add  --no-cache git mysql-client curl wget --virtual .build-deps freetype libxml2-dev \
+    && apk add  --no-cache git mysql-client curl libmcrypt  wget --virtual .build-deps freetype libxml2-dev \
     libpng libjpeg-turbo freetype-dev libpng-dev libjpeg-turbo-dev libmcrypt-dev \
-    make gcc g++ autoconf libmcrypt \
+    make gcc g++ autoconf \
     && docker-php-source extract \
     && pecl install xdebug redis \
     && docker-php-ext-enable xdebug redis \
