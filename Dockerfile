@@ -1,5 +1,13 @@
 FROM php:7.0-fpm-alpine
-MAINTAINER Zaher Ghaibeh <z@zah.me>
+
+LABEL Maintainer="Zaher Ghaibeh <z@zah.me>" \
+      Description="Lightweight php 7.0 container based on alpine with xDebug enabled & composer installed." \
+      org.label-schema.name="php-7.0-xdebug-alpine" \
+      org.label-schema.description="Lightweight php 7.0 container based on alpine with xDebug enabled & composer installed." \
+      org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.vcs-url="https://github.com/linuxjuggler/php-7.0-xdebug-alpine.git" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.schema-version="1.0.0"
 
 RUN apk update \
     && apk add  --no-cache git mysql-client curl libmcrypt libmcrypt-dev \
