@@ -1,6 +1,4 @@
-[![Docker Pulls](https://img.shields.io/docker/pulls/zaherg/php-7.0-xdebug-alpine.svg)](https://hub.docker.com/r/zaherg/php-7.0-xdebug-alpine/)
-[![](https://images.microbadger.com/badges/image/zaherg/php-7.0-xdebug-alpine.svg)](https://microbadger.com/images/zaherg/php-7.0-xdebug-alpine "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/zaherg/php-7.0-xdebug-alpine.svg)](https://microbadger.com/images/zaherg/php-7.0-xdebug-alpine "Get your own version badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/zaherg/php-7.0-xdebug-alpine.svg)](https://hub.docker.com/r/zaherg/php-7.0-xdebug-alpine/) [![](https://images.microbadger.com/badges/image/zaherg/php-7.0-xdebug-alpine.svg)](https://microbadger.com/images/zaherg/php-7.0-xdebug-alpine "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/zaherg/php-7.0-xdebug-alpine.svg)](https://microbadger.com/images/zaherg/php-7.0-xdebug-alpine "Get your own version badge on microbadger.com")
 
 
 This image contain php-7.0 based on alpine with xDebug enabled and Composer installed
