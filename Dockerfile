@@ -14,11 +14,11 @@ LABEL Maintainer="Zaher Ghaibeh <z@zah.me>" \
       org.label-schema.schema-version="1.0.0"
 
 RUN apk update \
-    && apk add  --no-cache git mysql-client curl libmcrypt libmcrypt-dev \
+    && apk add  --no-cache git mysql-client curl libmcrypt libmcrypt-dev libsodium libsodium-dev \
     libxml2-dev freetype-dev libpng-dev libjpeg-turbo-dev g++ make autoconf \
     && docker-php-source extract \
-    && pecl install xdebug redis \
-    && docker-php-ext-enable xdebug redis \
+    && pecl install xdebug redis libsodium \
+    && docker-php-ext-enable xdebug redis sodium \
     && docker-php-source delete \
     && docker-php-ext-install mcrypt pdo_mysql soap \
     && echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \

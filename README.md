@@ -3,6 +3,13 @@
 
 This image contain php-7.0 based on alpine with xDebug enabled and Composer installed
 
+```
+PHP 7.0.32 (fpm-fcgi) (built: Nov 16 2018 07:04:33)
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+    with Xdebug v2.6.1, Copyright (c) 2002-2018, by Derick Rethans
+```
+
 Also it has the following modules:
 
 [PHP Modules]
@@ -34,6 +41,7 @@ Reflection
 session
 SimpleXML
 soap
+sodium
 SPL
 sqlite3
 standard
